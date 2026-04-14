@@ -3,62 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carbon Neutral | Save Earth</title>
+    <title>Carbon Neutral</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <div class="logo">🌱 CarbonNeutral</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Calculate</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Navbar -->
+<header>
+    <div class="logo">🌱 CarbonNeutral</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Reduce Your Carbon Footprint</h1>
-        <p>Join us in building a greener and cleaner planet 🌍</p>
-        <button>Get Started</button>
-    </section>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>What is Carbon Offset?</h2>
-        <p>
-            Carbon offsetting means reducing carbon dioxide emissions by supporting environmental projects
-            like tree planting, renewable energy, and conservation.
-        </p>
-    </section>
+    <nav id="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Calculator</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Services Section -->
-    <section class="services">
-        <div class="card">
-            <h3>🌳 Tree Plantation</h3>
-            <p>Plant trees and absorb CO₂ naturally.</p>
-        </div>
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Reduce Your Carbon Footprint</h1>
+    <p>Build a cleaner, greener future 🌍</p>
+    <button>Get Started</button>
+</section>
 
-        <div class="card">
-            <h3>⚡ Renewable Energy</h3>
-            <p>Support solar and wind energy projects.</p>
-        </div>
+<!-- About -->
+<section class="about">
+    <h2>What is Carbon Offset?</h2>
+    <p>
+        Carbon offsetting helps reduce environmental impact by supporting projects
+        like tree planting and renewable energy.
+    </p>
+</section>
 
-        <div class="card">
-            <h3>📊 Carbon Calculator</h3>
-            <p>Measure your carbon footprint easily.</p>
-        </div>
-    </section>
+<!-- Services -->
+<section class="services">
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 CarbonNeutral | Save Earth 🌍</p>
-    </footer>
+    <div class="card">
+        <h3>🌳 Tree Plantation</h3>
+        <p>Absorb CO₂ naturally by planting trees.</p>
+    </div>
+
+    <div class="card">
+        <h3>⚡ Renewable Energy</h3>
+        <p>Support solar and wind energy.</p>
+    </div>
+
+    <div class="card">
+        <h3>📊 Carbon Calculator</h3>
+        <p>Measure your carbon footprint.</p>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 CarbonNeutral | Save Earth 🌍</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+function toggleMenu() {
+    document.getElementById("nav").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
